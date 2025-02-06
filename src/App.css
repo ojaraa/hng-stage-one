@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+.main-content{
+  /* max-width: 600px; */
+  min-width: 45vw;
+  /* min-width: 300px; */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 3rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-content h1{
+  font-size: 2.5rem;
+  line-height: 27px;
+}
+.game-instruction {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+.color-options{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.color-box{
+  height: 180px;
+  width: 200px;
+  border-radius: 5px;
+  margin: 1.5rem 0;
+}
+.color-options button{
+  cursor: pointer;
+  padding: 2rem;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  height: 75px;
+  width: 80px;
+}
+.game-status{
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.score{
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.new-game{
+  background: #0a5cf5;
+  cursor: pointer;
+  padding: .9rem 1.5rem;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  margin: 2rem 0;
+  color: #fff;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.bounce {
+  animation: bounce 0.4s ease-in-out;
+}
+@media (max-width : 576px) {
+  /* .main-content{
+    width: 100vw;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 3rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  } 
+    */
+    body{
+      height: auto;
+    }
+
+    
+.color-box{
+  height: 130px;
+  width: 180px;
+}
+.color-options button{
+  height: 60px;
+  width: 70px;
+}
+}
